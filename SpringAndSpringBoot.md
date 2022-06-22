@@ -4,7 +4,8 @@ URL 복사  이웃추가
 원제: Spring Boot vs. Spring MVC vs. Spring: How Do They Compare?
 
 출처: https://dzone.com/articles/spring-boot-vs-spring-mvc-vs-spring-how-do-they-compare
-Spring Boot vs. Spring MVC vs. Spring: How Do They Compare? - DZone Java
+
+### Spring Boot vs. Spring MVC vs. Spring: How Do They Compare? - DZone Java
 If you're new to the Spring world, take a look at some of the more common tools like the framework itself, Spring MVC, and Spring Boot to see how to apply them.
 dzone.com
 Spring Boot vs. Spring MVC vs. Spring 각 모듈들이 어떤방식으로 고려해서 선택해야 할지 궁금하여 위의 기사를 번역해 본다.
@@ -18,8 +19,13 @@ Spring Boot vs. Spring MVC vs. Spring 각 모듈들이 어떤방식으로 고려
 간단한 예제를 살펴보자
 의존성 주입이 없는 예제
 아래의 예제를 보면, WelcomeController 는 welcome 메시지를 얻기위해 WelcomeService 에 의존적이다. 그러면 WelcomeService 인스턴스를 얻기 위해서는 어떤 작업을 진행할까?
+
+```Java
+
 WelcomeService service = new WelcomeService();
-그것은 WelcomeService 의 인스턴스를 생성하는 것이며, 그것은 그것들이 강하게 결합된다는 것을 의미한다. 예를들어 우리가 WelcomeController 의 단위테스트에서 WelcomeService 에 대한 목(mock)을 생성한다면, 우리는 어떻게 WelcomeController 가 목을 사용하도록 할 수 있을까? 결코 쉽지 않다. 
+//그것은 WelcomeService 의 인스턴스를 생성하는 것이며, 그것은 그것들이 강하게 결합된다는 것을 의미한다. 
+//예를들어 우리가 WelcomeController 의 단위테스트에서 WelcomeService 에 대한 목(mock)을 생성한다면, 
+//우리는 어떻게 WelcomeController 가 목을 사용하도록 할 수 있을까? 결코 쉽지 않다. 
 @RestController
 public class WelcomeController {
     private WelcomeService service = new WelcomeService();
@@ -28,6 +34,8 @@ public class WelcomeController {
         return service.retrieveWelcomeMessage();
     }
 }
+```
+
 의존성 주입을 이용한 동일한 예제
 의존성 주입을 이용하면, 훨씬 더 단순해 보인다. 여러분은 스프링 프레임워크가 열심히 일하게 만들어야 한다. 우리는 단지 2개의 간단한 애노테이션인 @Component, @Autowired 를 사용한다. 
 
@@ -38,6 +46,7 @@ public class WelcomeController {
 곳에 주입한다.
 
 단위테스트시 우리는 스프링 프레임워크에게 WelcomeService 의 목을 WelcomeController 안으로 알아서 주입해 달라고 요청할 수 있다. (스프링 부트는 @MockBean 을 사용해서 이러한 작업을 쉽게 할 수 있도록 해줄 수 있다.)
+```
 @Component
 public class WelcomeService {
     //Bla Bla Bla
@@ -51,6 +60,7 @@ public class WelcomeController {
         return service.retrieveWelcomeMessage();
     }
 }
+```
 ​그밖에 스프링 프레임워크가 해결하는 것은 무엇이 있을까?
 ​문제1: Duplication/Plumbing Code
 스프링 프레임워크는 의존성 주입만 할까? 그렇지 않다 다음과 같은 많은 스프링 모듈들을 이용해서 의존성 주입의 핵심을 구성한다.
@@ -77,6 +87,7 @@ Spring MVC 프레임워크는 디커플된 웹 애플리케이션 개발 방법�
 스프링 기반 애플리케이션등른 많은 환경설정을 포함한다.
 
 우리가 Spring MVC 를 사용할 때, 우리는 컴포넌트 스캔, 디스패쳐 서블릿, 뷰 리졸버, 웹 jar 들(정적 컨텐츠를 제공하기 위한) 를 설정해야 한다.
+```
   <bean
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
@@ -87,7 +98,9 @@ Spring MVC 프레임워크는 디커플된 웹 애플리케이션 개발 방법�
         </property>
   </bean>
   <mvc:resources mapping="/webjars/**" location="/webjars/"/>
+  ```
 아래 코드는 웹 애플리케이션에서의 일반적인 디스패쳐 서블릿을 설정을 보여준다.
+```
 <servlet>
         <servlet-name>dispatcher</servlet-name>
         <servlet-class>
@@ -126,6 +139,7 @@ Spring MVC 프레임워크는 디커플된 웹 애플리케이션 개발 방법�
         <property name="dataSource" ref="dataSource" />
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager"/>
+    ```
 문제 #1: Spring Boot 자동 환경 설정: 다르게 생각해 볼 수 있을까?
 Spring Boot 는 이에 대한 새로운 사고방식을 제시한다.
 여기에 더 많은 정보들(intelligence)을 넣을 수 있을까? spring mvc jar 가 애플리케이션에 추가될 때, 우리가 일부 빈들을 자동으로 설정할 수 있을까?
@@ -136,6 +150,8 @@ Spring Boot 는 이에 대한 새로운 사고방식을 제시한다.
 ​문제 #2: Spring Boot Starter Projects: Built Around Well-Known Patterns
 ​우리가 웹 애플리케이션을 개발하고 싶다고 해보자. 먼저 우리는 사용하고 싶어하는 프레임워크들과 그 프레임워크들의 버전을 선택하고 그것들을 함께 연결할 방법을 찾을 것이다.
 모든 웹 애플리케이션들이 이와 유사항 요구사항들을 갖는다. 아래에 있는 dependency 들은 우리가 Spring MVC 코스에서 사용하는 것들이다. 이 종속성들은 Spring MVC, Jackson Databind (데이터 바인딩 용), Hibernate-Validator (Java Validation API 를 이용한 서버사이드 유효성 확인 용), Log4j (로깅용) 이다. 우리가 이 코스를 생성하려면 이 모든 프레임워크들이 호환되는 버전을 선택해야 했다.
+```
+
 <dependency>
    <groupId>org.springframework</groupId>
    <artifactId>spring-webmvc</artifactId>
@@ -156,17 +172,19 @@ Spring Boot 는 이에 대한 새로운 사고방식을 제시한다.
     <artifactId>log4j</artifactId>
     <version>1.2.17</version>
 </dependency>
-​스프링 부트 문서에서는 스타터(starter) 들에 대해 아래와 같이 기술한다.
-​
-스타터들은 편리한 종속성 기술자들(dependency descriptors)로서 여러분은 이 것을 애플리케이션에 포함시킬 수 있다. 여러분은 모든 스프링과 여러분이 필요로하는 관련 기술을 얻을 수 있는 올인원 쇼핑몰을 얻는 것으로 굳이 샘플코드를 찾아보거나 로드할 종속성 기술자들을 복사/붙여넣기 하지 않아도 된다. 예를들어 여러분이 스프링과 데이터베이스 접근을위한 JPA 를 사용하고 싶다면 여러분의 프로젝트에 spring-boot-starter-data-jpa 종속성을 포함시키고 진행하면 된다.
-​스타터의 예를(Spring Boot Starter Web) 들어보자
+```
+​ 스프링 부트 문서에서는 스타터(starter) 들에 대해 아래와 같이 기술한다.
+​ 스타터들은 편리한 종속성 기술자들(dependency descriptors)로서 여러분은 이 것을 애플리케이션에 포함시킬 수 있다. 여러분은 모든 스프링과 여러분이 필요로하는 관련 기술을 얻을 수 있는 올인원 쇼핑몰을 얻는 것으로 굳이 샘플코드를 찾아보거나 로드할 종속성 기술자들을 복사/붙여넣기 하지 않아도 된다. 예를들어 여러분이 스프링과 데이터베이스 접근을위한 JPA 를 사용하고 싶다면 여러분의 프로젝트에 spring-boot-starter-data-jpa 종속성을 포함시키고 진행하면 된다.
+​ 스타터의 예를(Spring Boot Starter Web) 들어보자
 
 여러분이 웹 애플리케이션이나 레스트풀 서비스들을 노출하기 위한 애플리케이션을 개발하거 싶어한다면 Spring Boot Start Web 을 선택할 수 있다. Spring Initializr 를 이용해서 Spring Boot Starter Web 을 이용하는 프로젝트를 생성하자.
 Spring Boot Starter Web 용 종속성
+```
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
 </dependency>
+```
 아래의 스크린샷은 우리의 애플리케이션에 추가된 또다른 종속성들을 보여준다.
 
 종속성들은 다음과 같이 분류 될 수 있다. 
