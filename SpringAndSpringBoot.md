@@ -46,7 +46,7 @@ public class WelcomeController {
 곳에 주입한다.
 
 단위테스트시 우리는 스프링 프레임워크에게 WelcomeService 의 목을 WelcomeController 안으로 알아서 주입해 달라고 요청할 수 있다. (스프링 부트는 @MockBean 을 사용해서 이러한 작업을 쉽게 할 수 있도록 해줄 수 있다.)
-```
+```Java
 @Component
 public class WelcomeService {
     //Bla Bla Bla
