@@ -64,18 +64,20 @@ public class WelcomeController {
 ​그밖에 스프링 프레임워크가 해결하는 것은 무엇이 있을까?
 ​문제1: Duplication/Plumbing Code
 스프링 프레임워크는 의존성 주입만 할까? 그렇지 않다 다음과 같은 많은 스프링 모듈들을 이용해서 의존성 주입의 핵심을 구성한다.
-    • Spring JDBC
-    • Spring MVC
-    • Spring AOP
-    • Spring ORM
-    • Spring JMS
-    • Spring Test
+    - Spring JDBC
+    - Spring MVC
+    - Spring AOP
+    - Spring ORM
+    - Spring JMS
+    - Spring Test
 
 Spring JMS와 Spring JDBC 를 생각해 보자. 이 모듈들이 어떤 새로운 기능을 제공하는 걸까? 그렇지 않다 우리는 J2EE 나 Java EE 를 이용해서 이 모듈들이 제공하는 모든 기능들을 할 수 있다. 그렇다면 이 모듈들이 제공하는 것은 무엇일까? 이 모듈들은 단순한 추상(abstraction) 을 제공하는데 이 추상들의 목적은 다음과 같다 
     • 반복 (Boilerplate code) 코드 나 중복코드를 줄임
     • 디커플링을 높이고 단위 테스트성을 증가시킨다.
 
 예를들어 과거의 JDBC 나 JMS 에 비해서 JDBCTemplate 나 JMSTemplate 를 사용하면 훨씬 적은 코드를 작성해도 된다.
+
+
 문제2: 다른 프레임워크들과의 좋은 통합
 스프링 프레임워크의 가장 훌륭한 점은 이미 해결된 문제를 해결하려고 시도하지 않는다는 것이다. 스프링 프레임워크가 하는 모든 것은 훌륭한 솔루션을 제공하는 프레임워크들을 훌륭하게 통합해 주는 일이다.
     • Hibernate for ORM
@@ -139,7 +141,7 @@ Spring MVC 프레임워크는 디커플된 웹 애플리케이션 개발 방법�
         <property name="dataSource" ref="dataSource" />
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager"/>
-    ```
+```
 문제 #1: Spring Boot 자동 환경 설정: 다르게 생각해 볼 수 있을까?
 Spring Boot 는 이에 대한 새로운 사고방식을 제시한다.
 여기에 더 많은 정보들(intelligence)을 넣을 수 있을까? spring mvc jar 가 애플리케이션에 추가될 때, 우리가 일부 빈들을 자동으로 설정할 수 있을까?
@@ -150,8 +152,8 @@ Spring Boot 는 이에 대한 새로운 사고방식을 제시한다.
 ​문제 #2: Spring Boot Starter Projects: Built Around Well-Known Patterns
 ​우리가 웹 애플리케이션을 개발하고 싶다고 해보자. 먼저 우리는 사용하고 싶어하는 프레임워크들과 그 프레임워크들의 버전을 선택하고 그것들을 함께 연결할 방법을 찾을 것이다.
 모든 웹 애플리케이션들이 이와 유사항 요구사항들을 갖는다. 아래에 있는 dependency 들은 우리가 Spring MVC 코스에서 사용하는 것들이다. 이 종속성들은 Spring MVC, Jackson Databind (데이터 바인딩 용), Hibernate-Validator (Java Validation API 를 이용한 서버사이드 유효성 확인 용), Log4j (로깅용) 이다. 우리가 이 코스를 생성하려면 이 모든 프레임워크들이 호환되는 버전을 선택해야 했다.
-```
 
+```
 <dependency>
    <groupId>org.springframework</groupId>
    <artifactId>spring-webmvc</artifactId>
@@ -179,6 +181,7 @@ Spring Boot 는 이에 대한 새로운 사고방식을 제시한다.
 
 여러분이 웹 애플리케이션이나 레스트풀 서비스들을 노출하기 위한 애플리케이션을 개발하거 싶어한다면 Spring Boot Start Web 을 선택할 수 있다. Spring Initializr 를 이용해서 Spring Boot Starter Web 을 이용하는 프로젝트를 생성하자.
 Spring Boot Starter Web 용 종속성
+
 ```
 <dependency>
     <groupId>org.springframework.boot</groupId>
