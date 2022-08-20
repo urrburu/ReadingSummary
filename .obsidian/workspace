@@ -1,0 +1,136 @@
+{
+  "main": {
+    "id": "adc586b2d3d301e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "43ebe0c61794f6b2",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "TDD를 하는 이유.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8dd18cd6207bdde7",
+    "type": "split",
+    "children": [
+      {
+        "id": "4afb1c616182547c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6001c6336172358",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e4197dac1a8234af",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "acce9ec1d851ceaf",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "45c29e10408ab7b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "a2958a142070208f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1522aac5d7f8c0e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TDD를 하는 이유.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "80f21a616847785c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "TDD를 하는 이유.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "778ff9158018563c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d07bba57e4f2324c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TDD를 하는 이유.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "43ebe0c61794f6b2",
+  "lastOpenFiles": [
+    "테스트 주도 개발.md",
+    "프로그래밍 초식/프로그래밍 초식 - 왕 파라미터X.md"
+  ]
+}
