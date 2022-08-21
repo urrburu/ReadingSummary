@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TDD를 하는 이유.md",
+            "file": "프로그래밍 초식/왕초식  - 변수 아끼기.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TDD를 하는 이유.md",
+                "file": "프로그래밍 초식/왕초식  - 변수 아끼기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TDD를 하는 이유.md",
+                "file": "프로그래밍 초식/왕초식  - 변수 아끼기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TDD를 하는 이유.md"
+                "file": "프로그래밍 초식/왕초식  - 변수 아끼기.md"
               }
             }
           }
@@ -130,6 +130,8 @@
   },
   "active": "43ebe0c61794f6b2",
   "lastOpenFiles": [
+    "Java의 동시성처리에 관해서.md",
+    "TDD를 하는 이유.md",
     "테스트 주도 개발.md",
     "프로그래밍 초식/프로그래밍 초식 - 왕 파라미터X.md"
   ]
