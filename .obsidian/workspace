@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "언어별 파일입출력 방법.md",
+            "file": "SQL 옵티마이저.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "언어별 파일입출력 방법.md",
+                "file": "SQL 옵티마이저.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "언어별 파일입출력 방법.md",
+                "file": "SQL 옵티마이저.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "언어별 파일입출력 방법.md"
+                "file": "SQL 옵티마이저.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "43ebe0c61794f6b2",
   "lastOpenFiles": [
+    "언어별 파일입출력 방법.md",
+    "SQL 옵티마이저.md",
     "로그인 관련한 문제들.md",
     "SpringAndSpringBoot.md",
     "Toss 면접 잘 못했던 것들!.md",
-    "언어별 파일입출력 방법.md",
     "MockTest.md",
     "테스트에 관해서 내가 부족했던 점들.md",
     "Spring Boot +Record type.md",
     "클린코드 읽은 부분 정리.md",
-    "JPA Repository를 상속하는게 꼭 답은 아닐 수 있다.md",
-    "SKT T웍스 면접 피드백.md"
+    "JPA Repository를 상속하는게 꼭 답은 아닐 수 있다.md"
   ]
 }
