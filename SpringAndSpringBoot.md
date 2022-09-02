@@ -1,6 +1,10 @@
 # Spring Boot vs. Spring MVC vs. Spring 의 비교
 
-URL 복사  이웃추가 
+## 1. 간편한 설정
+## 2. 편리한 의존성 관리 & 자동권장 버전관리
+## 3. 내장 서버로 인한 간단한 배포 서버 구축
+## 4. 스프링 Security, Data JPA등의 다른 스프링 프레임워크 요소를 쉽게 사용
+
 원제: Spring Boot vs. Spring MVC vs. Spring: How Do They Compare?
 
 출처: https://dzone.com/articles/spring-boot-vs-spring-mvc-vs-spring-how-do-they-compare
@@ -61,10 +65,10 @@ public class WelcomeController {
     }
 }
 ```
-​그밖에 스프링 프레임워크가 해결하는 것은 무엇이 있을까?
+
 ​문제1: Duplication/Plumbing Code
 스프링 프레임워크는 의존성 주입만 할까? 그렇지 않다 다음과 같은 많은 스프링 모듈들을 이용해서 의존성 주입의 핵심을 구성한다.
-    - Spring JDBC
+   - Spring JDBC
     - Spring MVC
     - Spring AOP
     - Spring ORM
@@ -143,14 +147,18 @@ Spring MVC 프레임워크는 디커플된 웹 애플리케이션 개발 방법�
     <tx:annotation-driven transaction-manager="transactionManager"/>
 ```
 문제 #1: Spring Boot 자동 환경 설정: 다르게 생각해 볼 수 있을까?
+
 Spring Boot 는 이에 대한 새로운 사고방식을 제시한다.
 여기에 더 많은 정보들(intelligence)을 넣을 수 있을까? spring mvc jar 가 애플리케이션에 추가될 때, 우리가 일부 빈들을 자동으로 설정할 수 있을까?
   • Hibernater jar 가 클래스 패스상에 있을 경우 Data Source를 자동으로  구성하는 것은 어떨까?
+  
   • Spring MVC jar 가 클래스패스상에 있을 경우  Dispatcher Servlet 을 자동으로 구성하는 것은 어떨까?
-기본적인 자동 구성을 오버라이드 하기위한 대비도 제공될 것이다.
-​스프링 부트는 클래스패스상에 사용가능한 프레임워크와 이미있는 환경설정을 바라본다. 이것들을 기반으로 스프링 부트는 애플리케이션을 이 프레임워크들과 함께 구성하는데 필요한 기본 환경설정을 제공한다. 이것을 “Auto Configuration” 이라고 부른다.
-​문제 #2: Spring Boot Starter Projects: Built Around Well-Known Patterns
-​우리가 웹 애플리케이션을 개발하고 싶다고 해보자. 먼저 우리는 사용하고 싶어하는 프레임워크들과 그 프레임워크들의 버전을 선택하고 그것들을 함께 연결할 방법을 찾을 것이다.
+	기본적인 자동 구성을 오버라이드 하기위한 대비도 제공될 것이다.
+ - 스프링 부트는 클래스패스상에 사용가능한 프레임워크와 이미있는 환경설정을 바라본다. 이것들을 기반으로 스프링 부트는 애플리케이션을 이 프레임워크들과 함께 구성하는데 필요한 기본 환경설정을 제공한다. 이것을 “Auto Configuration” 이라고 부른다.
+
+
+ - 문제 #2: Spring Boot Starter Projects: Built Around Well-Known Patterns
+ - 우리가 웹 애플리케이션을 개발하고 싶다고 해보자. 먼저 우리는 사용하고 싶어하는 프레임워크들과 그 프레임워크들의 버전을 선택하고 그것들을 함께 연결할 방법을 찾을 것이다.
 모든 웹 애플리케이션들이 이와 유사항 요구사항들을 갖는다. 아래에 있는 dependency 들은 우리가 Spring MVC 코스에서 사용하는 것들이다. 이 종속성들은 Spring MVC, Jackson Databind (데이터 바인딩 용), Hibernate-Validator (Java Validation API 를 이용한 서버사이드 유효성 확인 용), Log4j (로깅용) 이다. 우리가 이 코스를 생성하려면 이 모든 프레임워크들이 호환되는 버전을 선택해야 했다.
 
 ```
@@ -219,4 +227,4 @@ Spring Boot 의 다른 목표
    • Actuator: 애플리케이션을 고수준에서 모니터링하고 추적 할 수 있도록 해준다.
    • Embedded Server Integrations: 서버가 애플리케이션에 통합되기 때문에 우리는 서버에 설치되는 별도의 애플리케이션 서버를 가질 필요가 없다. (본문에는 별도의 애플리케이션 서버가 필요할 것이라고 되어 있는데 오타 인 것 같다. )
    • Default Error Handling
-[출처] Spring Boot vs. Spring MVC vs. Spring 의 비교|작성자 멋진태혁
+
