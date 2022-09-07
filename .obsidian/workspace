@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DB, 쿼리 튜닝/연결고리란 무엇인가? - 미작성.md",
+            "file": "Sorted Merge 조인 전략.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DB, 쿼리 튜닝/연결고리란 무엇인가? - 미작성.md",
+                "file": "Sorted Merge 조인 전략.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DB, 쿼리 튜닝/연결고리란 무엇인가? - 미작성.md",
+                "file": "Sorted Merge 조인 전략.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DB, 쿼리 튜닝/연결고리란 무엇인가? - 미작성.md"
+                "file": "Sorted Merge 조인 전략.md"
               }
             }
           }
@@ -131,14 +131,14 @@
   "active": "9b34320012272204",
   "lastOpenFiles": [
     "DB, 쿼리 튜닝/Nested Loop Join.md",
-    "Random Access.md",
-    "DB, 쿼리 튜닝/조인과 반복 연결의 비교.md",
-    "DB, 쿼리 튜닝/인덱스의 유형과 특징.md",
-    "DB, 쿼리 튜닝/SQL 옵티마이저.md",
     "DB, 쿼리 튜닝/PCTFREE와 PCTUSED.md",
+    "DB, 쿼리 튜닝/조인과 반복 연결의 비교.md",
     "DB, 쿼리 튜닝/연결고리란 무엇인가? - 미작성.md",
+    "DB, 쿼리 튜닝/인덱스의 유형과 특징.md",
+    "Random Access.md",
+    "Select 1+N 문제.md",
     "Redis.......가 뭐지......md",
-    "DB, 쿼리 튜닝/샤딩, 클러스터링 , 리플리케이션.md",
-    "DB, 쿼리 튜닝/SQL 튜닝.md"
+    "DB, 쿼리 튜닝/SQL 옵티마이저.md",
+    "DB, 쿼리 튜닝/샤딩, 클러스터링 , 리플리케이션.md"
   ]
 }
