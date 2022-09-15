@@ -66,6 +66,8 @@ where 부서코드 in (select 부서코드 from 근태 where 일자 between '200
 
 ## 다)필터형 세미조인
 
+이 형태의 세미조인이 매우 흥미로웠다. 
+
 ```sql
 
 ```
