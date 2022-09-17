@@ -1,26 +1,23 @@
 # Spring Boot vs. Spring MVC vs. Spring 의 비교
 
-## 1. 간편한 설정
-## 2. 편리한 의존성 관리 & 자동권장 버전관리
-## 3. 내장 서버로 인한 간단한 배포 서버 구축
-## 4. 스프링 Security, Data JPA등의 다른 스프링 프레임워크 요소를 쉽게 사용
+#### 1. 간편한 설정
+#### 2. 편리한 의존성 관리 & 자동권장 버전관리
+#### 3. 내장 서버로 인한 간단한 배포 서버 구축
+#### 4. 스프링 Security, Data JPA등의 다른 스프링 프레임워크 요소를 쉽게 사용
 
-원제: Spring Boot vs. Spring MVC vs. Spring: How Do They Compare?
 
-출처: https://dzone.com/articles/spring-boot-vs-spring-mvc-vs-spring-how-do-they-compare
-
-### Spring Boot vs. Spring MVC vs. Spring: How Do They Compare? - DZone Java
-If you're new to the Spring world, take a look at some of the more common tools like the framework itself, Spring MVC, and Spring Boot to see how to apply them.
-dzone.com
-Spring Boot vs. Spring MVC vs. Spring 각 모듈들이 어떤방식으로 고려해서 선택해야 할지 궁금하여 위의 기사를 번역해 본다.
+## Spring Boot vs. Spring MVC vs. Spring: How Do They Compare? 
 
 이 기사에서 여러분은 Spring, Spring MVC, Spring Boot 에 대해 간단히 알아보고 그것들이 해결하려는 문제들과 어디에 최적으로 적용되는지를 배울 것이다. 여러분이 배울 가장 중요한 것은 Spring, Spring MVC, Spring Boot 는 중복되는 부분을 다루지 않는다는 것이다. 각각의 모듈들은 서로 다른 문제들을 해결하면서도 그 문제들을 매우 잘 해결한다.
 스프링 프레임워크가 해결하는 핵심 문제는 무엇일까?
 오래 그리고 심각하게 생각해 보자. 스프링 프레임워크는 어떤 문제를 해결할까?
 스프링 프레임워크의 가장 중요한 특징은 의존성 주입(Dependency Injection)이다. 모든 스프링 모듈들의 핵심에는 의존성 주입이나 IOC(Inversion of Control)가 있다.
-왜 이것이 중요할까? DI 나 IOC 를 적절히 사용하면, 우리는 느슨하게 결합된 애플리케이션들을 개발할 수 있기 때문이다. 또한 느슨하게 결합된 애플리케이션들은 단위테스를 하기 쉽다. 
+왜 이것이 중요할까? 
+
+*DI 나 IOC 를 적절히 사용하면, 우리는 느슨하게 결합된 애플리케이션들을 개발할 수 있기 때문이다. 또한 느슨하게 결합된 애플리케이션들은 단위테스트를 하기 쉽다.* 
 
 간단한 예제를 살펴보자
+ 
 의존성 주입이 없는 예제
 아래의 예제를 보면, WelcomeController 는 welcome 메시지를 얻기위해 WelcomeService 에 의존적이다. 그러면 WelcomeService 인스턴스를 얻기 위해서는 어떤 작업을 진행할까?
 
@@ -46,8 +43,7 @@ public class WelcomeController {
   -  @Component 를 사용해서 우리는 스프링 프레임워크에게 이렇게 말한다: "스프링 프레임워크야 이것은 너가 관리해야 하는 빈이야"
   -  @Autowired 를 사용해서 우리는 스프링 프레임워크에게 이렇게 말한다: "야 스프링 프레임워크야 이 타입에 맞는 것을 찾아서 그것을 이것과 연결 시켜줘"
 
-​아래의 예제에서 스프링 프레임워크는 WelcomeService 인스턴스를 생성하고 WelcomeController 내에 @autowired 가 선언된
-곳에 주입한다.
+ - 아래의 예제에서 스프링 프레임워크는 WelcomeService 인스턴스를 생성하고 WelcomeController 내에 @autowired 가 선언된 곳에 주입한다.
 
 단위테스트시 우리는 스프링 프레임워크에게 WelcomeService 의 목을 WelcomeController 안으로 알아서 주입해 달라고 요청할 수 있다. (스프링 부트는 @MockBean 을 사용해서 이러한 작업을 쉽게 할 수 있도록 해줄 수 있다.)
 ```Java
@@ -66,7 +62,8 @@ public class WelcomeController {
 }
 ```
 
-​문제1: Duplication/Plumbing Code
+### 문제1: Duplication/Plumbing Code
+
 스프링 프레임워크는 의존성 주입만 할까? 그렇지 않다 다음과 같은 많은 스프링 모듈들을 이용해서 의존성 주입의 핵심을 구성한다.
    - Spring JDBC
     - Spring MVC
@@ -82,18 +79,20 @@ Spring JMS와 Spring JDBC 를 생각해 보자. 이 모듈들이 어떤 새로�
 예를들어 과거의 JDBC 나 JMS 에 비해서 JDBCTemplate 나 JMSTemplate 를 사용하면 훨씬 적은 코드를 작성해도 된다.
 
 
-문제2: 다른 프레임워크들과의 좋은 통합
-스프링 프레임워크의 가장 훌륭한 점은 이미 해결된 문제를 해결하려고 시도하지 않는다는 것이다. 스프링 프레임워크가 하는 모든 것은 훌륭한 솔루션을 제공하는 프레임워크들을 훌륭하게 통합해 주는 일이다.
+### 문제2: 다른 프레임워크들과의 통합
+
+ 스프링 프레임워크의 가장 훌륭한 점은 이미 해결된 문제를 해결하려고 시도하지 않는다는 것이다. 스프링 프레임워크가 하는 모든 것은 훌륭한 솔루션을 제공하는 프레임워크들을 훌륭하게 통합해 주는 일이다.
     • Hibernate for ORM
     • iBatis for Object Mapping
     • JUnit and Mockito for Unit Testing
-Spring MVC 프레임워크가 해결하는 핵심 문제는 무엇일까?
-Spring MVC 프레임워크는 디커플된 웹 애플리케이션 개발 방법을 제공한다. Dispatcher Servlet, ModelAndView, View Resolver 과 같은 단순개념을 이용해서 웹 애플리케이션 개발을 쉽게 할 수 있도록 해준다.
-우리는 왜 Spring Boot (스프링부트) 가 필요할까?
-스프링 기반 애플리케이션등른 많은 환경설정을 포함한다.
 
-우리가 Spring MVC 를 사용할 때, 우리는 컴포넌트 스캔, 디스패쳐 서블릿, 뷰 리졸버, 웹 jar 들(정적 컨텐츠를 제공하기 위한) 를 설정해야 한다.
-```
+Spring MVC 프레임워크가 해결하는 핵심 문제는 무엇일까? -> 관심사의 분리. 이것은 DI, IOC, AOP의 공통된 목적이자, Spring이 MVC패턴을 사용하는 이유이다. 이것이 분리된 웹 어플리케이션 개발 방법으로 드러난다. Dispatcher Servlet, ModelAndView, View Resolver 과 같은 단순개념을 이용해서 웹 애플리케이션 개발을 쉽게 할 수 있도록 해준다.
+
+# Q. 우리는 왜 Spring Boot (스프링부트) 가 필요할까?
+## A. ***스프링 기반의 많은 환경설정과 어플리케이션을 포함한다.***
+
+우리가 Spring MVC 를 사용할 때, 우리는 컴포넌트 스캔, 디스패쳐 서블릿, 뷰 리졸버, 웹 jar등(정적 컨텐츠를 제공하기 위한)을 설정해야 한다.
+```xml
   <bean
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
@@ -106,7 +105,7 @@ Spring MVC 프레임워크는 디커플된 웹 애플리케이션 개발 방법�
   <mvc:resources mapping="/webjars/**" location="/webjars/"/>
   ```
 아래 코드는 웹 애플리케이션에서의 일반적인 디스패쳐 서블릿을 설정을 보여준다.
-```
+```xml
 <servlet>
         <servlet-name>dispatcher</servlet-name>
         <servlet-class>
@@ -122,7 +121,9 @@ Spring MVC 프레임워크는 디커플된 웹 애플리케이션 개발 방법�
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    ```
 우리가 Hibernate/JPA 를 사용할 때는 datasource, entity manager factory, a transaction manager 를 구성해야 한다.
+```xml
   <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
         destroy-method="close">
         <property name="driverClass" value="${db.driver}" />
@@ -146,7 +147,10 @@ Spring MVC 프레임워크는 디커플된 웹 애플리케이션 개발 방법�
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager"/>
 ```
-문제 #1: Spring Boot 자동 환경 설정: 다르게 생각해 볼 수 있을까?
+
+Spring Boot에 와서는 이러한 문제들이 자동환경설정을 해주는 방식으로 해결되었다.
+
+### 문제 #1: Spring Boot 자동 환경 설정: 다르게 생각해 볼 수 있을까?
 
 Spring Boot 는 이에 대한 새로운 사고방식을 제시한다.
 여기에 더 많은 정보들(intelligence)을 넣을 수 있을까? spring mvc jar 가 애플리케이션에 추가될 때, 우리가 일부 빈들을 자동으로 설정할 수 있을까?
@@ -157,11 +161,11 @@ Spring Boot 는 이에 대한 새로운 사고방식을 제시한다.
  - 스프링 부트는 클래스패스상에 사용가능한 프레임워크와 이미있는 환경설정을 바라본다. 이것들을 기반으로 스프링 부트는 애플리케이션을 이 프레임워크들과 함께 구성하는데 필요한 기본 환경설정을 제공한다. 이것을 “Auto Configuration” 이라고 부른다.
 
 
- - 문제 #2: Spring Boot Starter Projects: Built Around Well-Known Patterns
+### 문제 #2: Spring Boot Starter Projects: Built Around Well-Known Patterns
  - 우리가 웹 애플리케이션을 개발하고 싶다고 해보자. 먼저 우리는 사용하고 싶어하는 프레임워크들과 그 프레임워크들의 버전을 선택하고 그것들을 함께 연결할 방법을 찾을 것이다.
 모든 웹 애플리케이션들이 이와 유사항 요구사항들을 갖는다. 아래에 있는 dependency 들은 우리가 Spring MVC 코스에서 사용하는 것들이다. 이 종속성들은 Spring MVC, Jackson Databind (데이터 바인딩 용), Hibernate-Validator (Java Validation API 를 이용한 서버사이드 유효성 확인 용), Log4j (로깅용) 이다. 우리가 이 코스를 생성하려면 이 모든 프레임워크들이 호환되는 버전을 선택해야 했다.
 
-```
+```xml
 <dependency>
    <groupId>org.springframework</groupId>
    <artifactId>spring-webmvc</artifactId>
@@ -190,7 +194,7 @@ Spring Boot 는 이에 대한 새로운 사고방식을 제시한다.
 여러분이 웹 애플리케이션이나 레스트풀 서비스들을 노출하기 위한 애플리케이션을 개발하거 싶어한다면 Spring Boot Start Web 을 선택할 수 있다. Spring Initializr 를 이용해서 Spring Boot Starter Web 을 이용하는 프로젝트를 생성하자.
 Spring Boot Starter Web 용 종속성
 
-```
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
