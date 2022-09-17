@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Spring/Spring Security 에서 Filter 와 인터셉터.md",
+            "file": "UNIX 시스템/기초 명령어.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Spring Security 에서 Filter 와 인터셉터.md",
+                "file": "UNIX 시스템/기초 명령어.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Spring Security 에서 Filter 와 인터셉터.md",
+                "file": "UNIX 시스템/기초 명령어.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Spring Security 에서 Filter 와 인터셉터.md"
+                "file": "UNIX 시스템/기초 명령어.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "1474b4a587bb6a80",
   "lastOpenFiles": [
-    "언어별 파일입출력 방법.md",
-    "Spring/Spring Boot +Record type.md",
-    "로그인 관련한 문제들.md",
-    "UNIX 시스템/리눅스의 메모리 관리.md",
+    "프로그래밍 초식/왕초식  - 변수 아끼기.md",
+    "디자인 패턴 - 구조패턴.md",
+    "UNIX 시스템/리눅스 파일 관리.md",
+    "UNIX 시스템/기초 명령어.md",
+    "UNIX 시스템/GRUB.md",
+    "README.md",
     "디자인패턴 - 행위패턴.md",
     "디자인 패턴 - 생성패턴.md",
-    "디자인 패턴 - 구조패턴.md",
-    "라우팅 알고리즘.md",
-    "Spring/Spring Security 에서 Filter 와 인터셉터.md",
-    "MSA구성하는 요령.md"
+    "Spring/Dispatcher-Servlet.md",
+    "Spring/Spring Security 에서 Filter 와 인터셉터.md"
   ]
 }
