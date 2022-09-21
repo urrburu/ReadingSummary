@@ -130,15 +130,15 @@
   },
   "active": "1474b4a587bb6a80",
   "lastOpenFiles": [
-    "CS관련해서 부족했던것 정리.md",
-    "Garbage Collection.md",
+    "DB, 쿼리 튜닝/데이터베이스 기본용어.md",
+    "DB, 쿼리 튜닝/DB 하지만 필기성격이 있는/관계대수.md",
+    "Webrtc는 Tcp인가, UDP인가.md",
+    "TCP vs UDP.md",
+    "네트워크/서브네팅, FLSM, VLSM.md",
+    "UNIX 시스템/디스크 스케줄링.md",
     "프로세스 vs  스레드.md",
-    "테스트 주도 개발.md",
+    "Garbage Collection.md",
     "테스트에 관해서 내가 부족했던 점들.md",
-    "추석의 스프링 리액터/인덱스 페이지.md",
-    "추석의 스프링 리액터/스프링 리액터 시작하기 1 - 리액티브 스트림 Flux Mono Subscriber.md",
-    "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md",
-    "소켓 프로그래밍.md",
-    "라우팅 알고리즘.md"
+    "트랜잭션 격리 수준.md"
   ]
 }
