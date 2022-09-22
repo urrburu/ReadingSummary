@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DB, 쿼리 튜닝/DB 하지만 필기성격이 있는/관계대수.md",
+            "file": "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DB, 쿼리 튜닝/DB 하지만 필기성격이 있는/관계대수.md",
+                "file": "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DB, 쿼리 튜닝/DB 하지만 필기성격이 있는/관계대수.md",
+                "file": "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DB, 쿼리 튜닝/DB 하지만 필기성격이 있는/관계대수.md"
+                "file": "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "1474b4a587bb6a80",
   "lastOpenFiles": [
-    "DB, 쿼리 튜닝/데이터베이스 기본용어.md",
-    "DB, 쿼리 튜닝/DB 하지만 필기성격이 있는/관계대수.md",
-    "Webrtc는 Tcp인가, UDP인가.md",
-    "TCP vs UDP.md",
-    "네트워크/서브네팅, FLSM, VLSM.md",
-    "UNIX 시스템/디스크 스케줄링.md",
-    "프로세스 vs  스레드.md",
-    "Garbage Collection.md",
-    "테스트에 관해서 내가 부족했던 점들.md",
-    "트랜잭션 격리 수준.md"
+    "소켓 프로그래밍.md",
+    "언어별 파일입출력 방법.md",
+    "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md",
+    "로그인 관련한 문제들.md",
+    "추상클래스와 인터페이스.md",
+    "자바 버전별 변경사항1.8~.md",
+    "클린코드 읽은 부분 정리.md",
+    "UNIX 시스템/GRUB.md",
+    "면접실수 정리/Toss 면접 잘 못했던 것들!.md",
+    "추석의 스프링 리액터/인덱스 페이지.md"
   ]
 }
