@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "1474b4a587bb6a80",
+        "id": "445fc43b99a7faa1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md",
+            "file": "프로세스 vs  스레드.md",
             "mode": "source",
             "source": false
           }
@@ -41,7 +41,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md",
+                "file": "프로세스 vs  스레드.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md",
+                "file": "프로세스 vs  스레드.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md"
+                "file": "프로세스 vs  스레드.md"
               }
             }
           }
@@ -128,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1474b4a587bb6a80",
+  "active": "445fc43b99a7faa1",
   "lastOpenFiles": [
-    "소켓 프로그래밍.md",
-    "언어별 파일입출력 방법.md",
-    "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md",
-    "로그인 관련한 문제들.md",
-    "추상클래스와 인터페이스.md",
-    "자바 버전별 변경사항1.8~.md",
+    "Java의 동시성처리에 관해서.md",
+    "트랜잭션 격리 수준.md",
+    "테스트에 관해서 내가 부족했던 점들.md",
+    "테스트 주도 개발.md",
     "클린코드 읽은 부분 정리.md",
-    "UNIX 시스템/GRUB.md",
-    "면접실수 정리/Toss 면접 잘 못했던 것들!.md",
-    "추석의 스프링 리액터/인덱스 페이지.md"
+    "UNIX 시스템/기초 명령어.md",
+    "README.md",
+    "Redis.......가 뭐지......md",
+    "TDD를 하는 이유.md",
+    "Webrtc는 Tcp인가, UDP인가.md"
   ]
 }
