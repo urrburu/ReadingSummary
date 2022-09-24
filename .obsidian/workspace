@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "프로세스 vs  스레드.md",
+            "file": "네트워크/CSMA-CD.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "프로세스 vs  스레드.md",
+                "file": "네트워크/CSMA-CD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "프로세스 vs  스레드.md",
+                "file": "네트워크/CSMA-CD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "프로세스 vs  스레드.md"
+                "file": "네트워크/CSMA-CD.md"
               }
             }
           }
@@ -128,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "445fc43b99a7faa1",
+  "active": "f6001c6336172358",
   "lastOpenFiles": [
-    "Java의 동시성처리에 관해서.md",
-    "트랜잭션 격리 수준.md",
-    "테스트에 관해서 내가 부족했던 점들.md",
-    "테스트 주도 개발.md",
-    "클린코드 읽은 부분 정리.md",
-    "UNIX 시스템/기초 명령어.md",
-    "README.md",
-    "Redis.......가 뭐지......md",
-    "TDD를 하는 이유.md",
-    "Webrtc는 Tcp인가, UDP인가.md"
+    "DB, 쿼리 튜닝/트랜잭션 격리 수준.md",
+    "프로세스 vs  스레드.md",
+    "네트워크/근거리 통신망(이더넷 와이파이 지그비).md",
+    "네트워크/유니캐스트, 멀티캐스트, 브로드캐스트.md",
+    "네트워크/서브네팅, FLSM, VLSM.md",
+    "네트워크/라우팅 알고리즘.md",
+    "네트워크/TCP vs UDP.md",
+    "네트워크/Webrtc는 Tcp인가, UDP인가.md",
+    "네트워크/CSMA-CD.md",
+    "Java의 동시성처리에 관해서.md"
   ]
 }
