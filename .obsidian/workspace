@@ -130,15 +130,15 @@
   },
   "active": "445fc43b99a7faa1",
   "lastOpenFiles": [
-    "Java,JVM/JVM Compressed Oops.md",
-    "Java,JVM/Java의 동시성처리에 관해서.md",
-    "면접실수 정리/다우기술 면접.md",
-    "면접실수 정리/SKT T웍스 면접 피드백.md",
+    "네트워크/Webrtc는 Tcp인가, UDP인가.md",
+    "네트워크/TCP vs UDP.md",
+    "네트워크/SSL-TLS.md",
+    "네트워크/IP주소.md",
+    "네트워크/CSMA-CD.md",
+    "DB, 쿼리 튜닝/오라클 계층형 쿼리.md",
+    "DB, 쿼리 튜닝/Hash Join하는 방법 - 그 중에서도 인메모리.md",
+    "테스트 주도 개발.md",
     "클린코드 읽은 부분 정리.md",
-    "Java,JVM/추상클래스와 인터페이스.md",
-    "Spring/Spring Security 에서 Filter 와 인터셉터.md",
-    "Spring/AOP.md",
-    "Spring/Dispatcher-Servlet.md",
-    "Spring/JPA Repository를 상속하는게 꼭 답은 아닐 수 있다.md"
+    "Java,JVM/Garbage Collection.md"
   ]
 }
