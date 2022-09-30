@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "HTTP 버전별 특징.md",
+            "file": "면접실수 정리/다우기술 면접.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HTTP 버전별 특징.md",
+                "file": "면접실수 정리/다우기술 면접.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HTTP 버전별 특징.md",
+                "file": "면접실수 정리/다우기술 면접.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTTP 버전별 특징.md"
+                "file": "면접실수 정리/다우기술 면접.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "445fc43b99a7faa1",
   "lastOpenFiles": [
+    "Algorithm/quick sort.md",
+    "Algorithm/Merge Sort.md",
+    "Algorithm/허프만 압축 알고리즘.md",
+    "HTTP 버전별 특징.md",
     "프로세스 vs  스레드.md",
     "Spring/Spring And SpringBoot.md",
     "Java,JVM/Garbage Collection.md",
     "Java,JVM/Java의 동시성처리에 관해서.md",
     "Java,JVM/JVM Compressed Oops.md",
-    "면접실수 정리/Toss 면접 잘 못했던 것들!.md",
-    "면접실수 정리/다우기술 면접.md",
-    "DB, 쿼리 튜닝/Select 1+N 문제.md",
-    "Java,JVM/추상클래스와 인터페이스.md",
-    "Java,JVM/자바 버전별 변경사항1.8~.md"
+    "면접실수 정리/Toss 면접 잘 못했던 것들!.md"
   ]
 }
