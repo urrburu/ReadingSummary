@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Java,JVM/자바의 문자열연산에서 spilt 함수.md",
+            "file": "테스트/Junit5의 변경점.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java,JVM/자바의 문자열연산에서 spilt 함수.md",
+                "file": "테스트/Junit5의 변경점.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java,JVM/자바의 문자열연산에서 spilt 함수.md",
+                "file": "테스트/Junit5의 변경점.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java,JVM/자바의 문자열연산에서 spilt 함수.md"
+                "file": "테스트/Junit5의 변경점.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "cbfa87f15fecd659",
   "lastOpenFiles": [
-    "DB, 쿼리 튜닝/슬로우쿼리.md",
-    "UNIX 시스템/kmalloc & vmalloc.md",
+    "테스트/TDD를 하는 이유.md",
+    "테스트/테스트 소개.md",
+    "클린코드 읽은 부분 정리.md",
+    "테스트/Junit5의 변경점.md",
+    "프로세스 vs  스레드.md",
+    "추석의 스프링 리액터/스프링 리액터 시작하기 1 - 리액티브 스트림 Flux Mono Subscriber.md",
+    "추석의 스프링 리액터/인덱스 페이지.md",
     "Java,JVM/JVM Compressed Oops.md",
-    "JPA/Select 1+N 문제.md",
-    "Java,JVM/Java의 동시성처리에 관해서.md",
-    "Java,JVM/Java와 C++의 차이.md",
-    "CQRS 아는 척 하기/CQRS란.md",
-    "Algorithm/트라이.md",
-    "Algorithm/AVL Tree.md",
-    "DB, 쿼리 튜닝/계층형쿼리를 이용한 SQL 조합 만들기.md"
+    "Java,JVM/Garbage Collection.md",
+    "Java,JVM/BigInteger 사용법.md"
   ]
 }
