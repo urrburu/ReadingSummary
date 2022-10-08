@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "테스트/Junit5의 변경점.md",
+            "file": "네트워크/링크계층에 관하여.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "테스트/Junit5의 변경점.md",
+                "file": "네트워크/링크계층에 관하여.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "테스트/Junit5의 변경점.md",
+                "file": "네트워크/링크계층에 관하여.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "테스트/Junit5의 변경점.md"
+                "file": "네트워크/링크계층에 관하여.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "cbfa87f15fecd659",
   "lastOpenFiles": [
+    "네트워크/유니캐스트, 멀티캐스트, 브로드캐스트.md",
+    "네트워크/링크계층에 관하여.md",
+    "네트워크/CSMA-CD.md",
+    "테스트/SQA란 무엇인가.md",
+    "HTTP 버전별 특징.md",
+    "테스트/Junit5의 변경점.md",
     "테스트/TDD를 하는 이유.md",
     "테스트/테스트 소개.md",
     "클린코드 읽은 부분 정리.md",
-    "테스트/Junit5의 변경점.md",
-    "프로세스 vs  스레드.md",
-    "추석의 스프링 리액터/스프링 리액터 시작하기 1 - 리액티브 스트림 Flux Mono Subscriber.md",
-    "추석의 스프링 리액터/인덱스 페이지.md",
-    "Java,JVM/JVM Compressed Oops.md",
-    "Java,JVM/Garbage Collection.md",
-    "Java,JVM/BigInteger 사용법.md"
+    "프로세스 vs  스레드.md"
   ]
 }
