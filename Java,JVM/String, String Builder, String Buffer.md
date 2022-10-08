@@ -17,3 +17,24 @@ String 과는 반대로 StringBuffer/StringBuilder 는 가변성 가지기 때�
 
 # String Buffer -> 가변, 동기화O
 **StringBuffer**는 동기화 키워드를 지원하여 **멀티쓰레드 환경에서 안전하다는 점(thread-safe)** 입니다.  참고로 **String**도 불변성을 가지기때문에 마찬가지로  **멀티쓰레드 환경에서의 안정성(thread-safe)**을 가지고 있습니다.
+
+
+## 스왑연산의 경우
+1) 문자열을 문자배열 객체로 변환해 이 배열의 인덱스를 교체하는 방법이 있다. 
+
+2) char배열의 두 char을 swap한다. 
+
+## 이 경우 StringBuilder을 사용해 문자열 스왑하는 방법이 있다. 
+
+```Java
+public class SwapString{
+	static String swap(String mystring, int i, int j){
+		StringBuilder mysb = new StringBuilder(mystring);
+		mysb.setCharAt(i, mystring.charAt(j));
+		mysb.setCharAt(j, mystring.charAt(i));
+		return mysb.toString();
+	}
+}
+```
+
+이런 식으로 String의 불변을 뚫고 변환하는 방법이 있다. 

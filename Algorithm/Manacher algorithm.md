@@ -18,10 +18,11 @@ We have already discussed Naïve [O(n3)] and quadratic [O(n2)] approaches at [S
 In this article, we will talk about [Manacher’s algorithm](https://en.wikipedia.org/wiki/Longest_palindromic_substring#Manacher.27s_algorithm) which finds Longest Palindromic Substring in linear time.   
 이 글에서 우리는 매네체 알고리즘에 대해서 이야기할 것이다. 선형시간에 가장 긴 서브 스트링 팰린드롬을 찾는 알고리즘이 바로 매네체 알고리즘이다. 
 One way ([Set 2](https://www.geeksforgeeks.org/longest-palindromic-substring-set-2/)) to find a palindrome is to start from the center of the string and compare characters in both directions one by one. If corresponding characters on both sides (left and right of the center) match, then they will make a palindrome.
-팰린드롬을 찾는 하나의 방법은 스트링의 가운데에서 시작해 두 방향으로 글자를 비교해가면서 찾는 것이다. 만약 양쪽에서 
+팰린드롬을 찾는 하나의 방법은 스트링의 가운데에서 시작해 두 방향으로 글자를 비교해가면서 찾는 것이다. 만약 양쪽의 문자가 일치한다면, 이것들은 팰린드롬을 만들 것이다.
 Let’s consider string “abababa”.   
+abababa 라는 문자열을 생각해보자
 Here center of the string is 4th character (with index 3) b. If we match characters in left and right of the center, all characters match and so string “abababa” is a palindrome.   
-  
+문자열의 가운데는 4번째 문자이면서 인덱스는 3인 b이다. 만약 우리가 왼쪽과 오른쪽에 있는 문자열을 일치시킨다면, 모든 캐릭터들은 맞아 떨어지고, abababa는 팰린드롬이 된다. 
 
 ![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltp1.jpg)
 
