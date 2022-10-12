@@ -91,8 +91,8 @@ STW는 스탑 더 월드, GC를 돌리는 동안 모든 스레드는 중지되�
 
 ### Q. ZGC를 사용하고 있는데, 메모리 사용량이 Xmx값보다 훨씬 높게 보여요!
 
-A. [https://stackoverflow.com/questions/62926652](%EB%8B%B5%EB%B3%80)  
-tl;dr - ZGC는 colored pointers 라는 기술을 사용하기 때문에, 실제 메모리 사용량보다 약 3배 더 큰 메모리 사용량으로 보일 수 있음. (예: `512MB` 힙은 `1.5GB`로 보일 수 있음)
+A. [https://stackoverflow.com/questions/62926652]
+ ZGC는 colored pointers 라는 기술을 사용하기 때문에, 실제 메모리 사용량보다 약 3배 더 큰 메모리 사용량으로 보일 수 있음. (예: `512MB` 힙은 `1.5GB`로 보일 수 있음)
 
 ### ZGC하고 CompressedOops를 같이 사용할 수 없어요.
 
