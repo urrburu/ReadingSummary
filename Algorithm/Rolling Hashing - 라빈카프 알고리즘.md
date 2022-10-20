@@ -10,15 +10,15 @@ Strings are arrays of characters. Characters however can be interpreted as integ
 
 # Method 
 Say P has length L and S has length n. One way to search for P in S: 
-1. Hash P to get h(P) O(L) 
+1. Hash P to get h(P) --------- O(L) 
+	P를 해쉬한다 h(P)를 얻기 위해
 
-
-2. Iterate through all length L substrings of S, hashing those substrings and comparing to h(P) O(nL) 
-
+2. Iterate through all length L substrings of S, hashing those substrings and comparing to h(P) ----------O(nL) 
+	전체 길이 L을 돌아다니면서 서브스트링 S 이 서브스트링들을 해싱하면서 비교
 
 
 3. If a substring hash value does match h(P), do a string comparison on that substring and P, stopping if they do match and continuing if they do not. O(L) 
-
+만약 서브스트링의 해쉬값이 h(P)랑 맞아 떨어지면, 그 서브스트링과 P의 비교를 해라 만약 그들이  일치하면 멈추고 아니라면 계속 비교해나가라
 
 
 This method takes O(nL) time. We can improve on this runtime by using a rolling hash. In step 2. we looked at O(n) substrings independently and took O(L) to hash them all. These substrings however have a lot of overlap. For example, looking at length 5 substrings of “algorithms”, the first two substrings are “algor” and “lgori”. Wouldn’t it be nice if we could take advantage of the fact that the two substrings share “lgor”, which takes up most of each substring, to save some computation? It turns out we can with rolling hashes.
