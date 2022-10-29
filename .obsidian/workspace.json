@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "67a06b441c6c8fec",
+            "id": "bc1ccad65f996a4e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Java,JVM/Effective Java/생성자와 관련된 이야기.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Java,JVM/Effective Java/생성자와 관련된 이야기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Java,JVM/Effective Java/생성자와 관련된 이야기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Java,JVM/Effective Java/생성자와 관련된 이야기.md"
+              }
             }
           }
         ]
@@ -128,8 +136,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "67a06b441c6c8fec",
+  "active": "bc1ccad65f996a4e",
   "lastOpenFiles": [
+    "Spring/Spring Bean Lifecycle.md",
+    "Java,JVM/Effective Java/생성자와 관련된 이야기.md",
     "DB, 쿼리 튜닝/쿼리 튜닝에 관하여/고급 조인 기법.md",
     "DB, 쿼리 튜닝/인덱스/인덱스 수립 전략.md",
     "DB, 쿼리 튜닝/인덱스/인덱스의 유형과 특징.md",
@@ -137,8 +147,6 @@
     "네트워크/라우팅 알고리즘.md",
     "네트워크/근거리 통신망(이더넷 와이파이 지그비).md",
     "면접실수 정리/다우기술 PT면접.md",
-    "면접실수 정리/한화시스템 면접.md",
-    "면접실수 정리/다우기술 면접.md",
-    "면접실수 정리/국카면접 실수.md"
+    "면접실수 정리/한화시스템 면접.md"
   ]
 }
