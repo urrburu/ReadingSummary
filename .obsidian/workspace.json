@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "ab777ea59b6c720a",
+        "id": "baf71d71cfb6bab1",
         "type": "tabs",
         "children": [
           {
-            "id": "47ef4bba1f972dfa",
+            "id": "77909f29559aa959",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "추석의 스프링 리액터/스프링 리액터 3- 피쳐.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "추석의 스프링 리액터/스프링 리액터 3- 피쳐.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "추석의 스프링 리액터/스프링 리액터 3- 피쳐.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "추석의 스프링 리액터/스프링 리액터 3- 피쳐.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -136,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "47ef4bba1f972dfa",
+  "active": "77909f29559aa959",
   "lastOpenFiles": [
-    "추석의 스프링 리액터/스프링 리액터 5- 테스팅.md",
+    "프로세스 vs  스레드.md",
+    "DB, 쿼리 튜닝/쿼리짜는데 요즘 생각하는 것.md",
     "앞으로의 계획......md",
+    "추석의 스프링 리액터/스프링 리액터 3- 피쳐.md",
+    "추석의 스프링 리액터/스프링 리액터 5- 테스팅.md",
     "UNIX 시스템/디스크 스케줄링.md",
     "Java,JVM/Effective Java/생성자와 관련된 이야기.md",
     "Java,JVM/리플렉션.md",
     "Spring/Dispatcher-Servlet.md",
-    "Java,JVM/BigInteger 사용법.md",
-    "Spring/Spring Bean Lifecycle.md",
-    "DB, 쿼리 튜닝/쿼리 튜닝에 관하여/고급 조인 기법.md",
-    "DB, 쿼리 튜닝/인덱스/인덱스 수립 전략.md"
+    "Java,JVM/BigInteger 사용법.md"
   ]
 }
