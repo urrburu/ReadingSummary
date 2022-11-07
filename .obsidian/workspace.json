@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "baf71d71cfb6bab1",
+        "id": "ddfe4a18ec4b602f",
         "type": "tabs",
         "children": [
           {
-            "id": "77909f29559aa959",
+            "id": "15269ed25eab2bcf",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -128,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "77909f29559aa959",
+  "active": "15269ed25eab2bcf",
   "lastOpenFiles": [
-    "프로세스 vs  스레드.md",
-    "DB, 쿼리 튜닝/쿼리짜는데 요즘 생각하는 것.md",
-    "앞으로의 계획......md",
-    "추석의 스프링 리액터/스프링 리액터 3- 피쳐.md",
-    "추석의 스프링 리액터/스프링 리액터 5- 테스팅.md",
-    "UNIX 시스템/디스크 스케줄링.md",
     "Java,JVM/Effective Java/생성자와 관련된 이야기.md",
-    "Java,JVM/리플렉션.md",
-    "Spring/Dispatcher-Servlet.md",
-    "Java,JVM/BigInteger 사용법.md"
+    "Java,JVM/Effective Java/자원을 직접 명시하지 말고 의존 객체 주입을 사용하라.md",
+    "Algorithm/Imos 테크닉 DP에 있어서.md",
+    "Algorithm/허프만 압축 알고리즘.md",
+    "Algorithm/편집거리 알고리즘.md",
+    "Algorithm/레드- 블랙 트리.md",
+    "Algorithm/AVL Tree.md",
+    "DB, 쿼리 튜닝/SQL 옵티마이저.md",
+    "테스트/테스트 주도 개발.md",
+    "테스트/테스트 소개.md"
   ]
 }
