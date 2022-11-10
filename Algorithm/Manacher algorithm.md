@@ -42,8 +42,16 @@ Let’s consider two strings “abababa” and “abaaba” as shown below:  
 ![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltp4.jpg)
 
 In these two strings, left and right side of the center positions (position 7 in 1st string and position 6 in 2nd string) are symmetric. Why? Because the whole string is palindrome around the center position.   
-If we need to calculate Longest Palindromic Substring at each 2*N+1 positions from left to right, then palindrome’s symmetric property could help to avoid some of the unnecessary computations (i.e. character comparison). If there is a palindrome of some length L centered at any position P, then we may not need to compare all characters in left and right side at position P+1. We already calculated LPS at positions before P and they can help to avoid some of the comparisons after position P.   
+두 문자열 안에서, 가운데포지션에서 왼쪽과 오른쪽 방향은 비슷하다. 왜냐? 왜냐하면 전체 문자열이 팰린드롬이기 때문이다. 가운데포지션을 중심으로 한.
+If we need to calculate Longest Palindromic Substring at each 2*N+1 positions from left to right, then palindrome’s symmetric property could help to avoid some of the unnecessary computations (i.e. character comparison).
+
+If there is a palindrome of some length L centered at any position P, then we may not need to compare all characters in left and right side at position P+1. We already calculated LPS at positions before P and they can help to avoid some of the comparisons after position P.   
 This use of information from previous positions at a later point of time makes the Manacher’s algorithm linear. In [Set 2](https://www.geeksforgeeks.org/longest-palindromic-substring-set-2/), there is no reuse of previous information and so that is quadratic. 
+
+만약 우리가 왼쪽에서 오른쪽으로 각 2*N+1 위치에서 가장 긴 회문인 부분문자열을 계산해야 한다면, 회문의 대칭 특성은 불필요한 계산(즉, 문자 비교)의 일부를 피하는 데 도움이 될 수 있다.  
+  
+만약 어떤 위치 P에 집중된 어떤 길이 L의 회문이 있다면, 우리는 위치 P+1에서 왼쪽과 오른쪽의 모든 문자를 비교할 필요가 없을 수도 있다. 우리는 이미 P 이전의 위치에서 가장 긴 회문인 부분문자열을 계산했고, 그것들은 P 위치 이후의 일부 비교를 피하는 데 도움이 될 수 있다.   
+이후 시점에서 이전 위치의 정보를 사용하는 것은 매네체 알고리즘을 선형으로 만든다. [Set 2](https://www.geeksforgeeks.org/longest-palindromic-substring-set-2/),에서는 이전 정보를 재사용하지 않으므로 2차적입니다.
 
 Manacher’s algorithm is probably considered complex to understand, so here we will discuss it in as detailed way as we can. Some of it’s portions may require multiple reading to understand it properly. 
 매네체 알고리즘은 아마도 이해하기 힘들수도 있다. 그래서 여기 우리는 우리가 가능한한 자세한 방식으로 설명할 것이다. 이 일부분은 여러번 읽어야할 수 있다. 
@@ -73,9 +81,18 @@ In LPS Array L: 
 -   LPS length value at odd positions (the actual character positions) will be odd and greater than or equal to 1 (1 will come from the center character itself if nothing else matches in left and right side of it)
 -   LPS length value at even positions (the positions between two characters, extreme left and right positions) will be even and greater than or equal to 0 (0 will come when there is no match in left and right side)
 
+배열 L에서 가장 긴 회문인 부분문자열은:   
+  
+- 홀수 위치(실제 문자 위치)의 LPS 길이 값은 홀수이고 1 이상입니다(1은 왼쪽과 오른쪽에서 일치하는 것이 없는 경우 중앙 문자 자체에서 나옵니다).  
+- 짝수 위치(두 문자 사이의 위치, 왼쪽과 오른쪽 끝 위치)에서 LPS 길이 값은 짝수이고 0 이상입니다(왼쪽과 오른쪽이 일치하지 않을 때 0이 나타남).  
+
 **Position and index for the string are two different things here. For a given string S of length N, indexes will be from 0 to N-1 (total N indexes) and positions will be from 0 to 2*N (total 2*N+1 positions).** 
 
+**여기서 문자열의 위치와 인덱스는 서로 다릅니다. 길이 N의 주어진 문자열 S에 대해 인덱스는 0에서 N-1(총 N 인덱스)이고 위치는 0에서 2*N(총 2*N+1 위치)입니다.**
+
 LPS length value can be interpreted in two ways, one in terms of index and second in terms of position. LPS value d at position I (L[i] = d) tells that: 
+
+가장 긴 회문 부분문자열의 길이값은 두가지 방법으로 번역될 수 있다. 하나는 인덱스의 의미로 하나는 포지션의 의미로 포지션 L의 LPS 값 d는 이런 것들을 말해준다 :
 
 -   Substring from position i-d to i+d is a palindrome of length d (in terms of position)
 -   Substring from index (i-d)/2 to [(i+d)/2 – 1] is a palindrome of length d (in terms of index)
@@ -95,7 +112,7 @@ Here we will see how to calculate LPS length array efficiently.
 To calculate LPS array efficiently, we need to understand how LPS length for any position may relate to LPS length value of any previous already calculated position.  
 For string “abaaba”, we see following:
 
-                    [![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltlp1.jpg)](https://media.geeksforgeeks.org/wp-content/uploads/ltlp1.jpg)
+[![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltlp1.jpg)](https://media.geeksforgeeks.org/wp-content/uploads/ltlp1.jpg)
 
 If we look around position 3:
 
@@ -113,7 +130,7 @@ If we look around position 6:
 If we already know LPS length values at positions 1, 2, 3, 4, 5 and 6 already then we may not need to calculate LPS length at positions 7, 8, 9, 10 and 11 because they are equal to LPS length values at corresponding positions on left side of position 6.  
 For string “abababa”, we see following:
 
-                    [![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltlp2.jpg)](https://media.geeksforgeeks.org/wp-content/uploads/ltlp2.jpg)
+[![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltlp2.jpg)](https://media.geeksforgeeks.org/wp-content/uploads/ltlp2.jpg)
 
 If we already know LPS length values at positions 1, 2, 3, 4, 5, 6 and 7 already then we may not need to calculate LPS length at positions 8, 9, 10, 11, 12 and 13 because they are equal to LPS length values at corresponding positions on left side of position 7.
 
@@ -152,9 +169,7 @@ If LPS length of currentLeftPosition is less than “centerRightPosition – cur
 L[currentRightPosition] = L[currentLeftPosition] if L[currentLeftPosition] < centerRightPosition – currentRightPosition. This is **Case 1**.
 
 Let’s consider below scenario for string “abababa”:
-
-                          (click to see it clearly)
-                    [![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltlp4.jpg)](https://media.geeksforgeeks.org/wp-content/uploads/ltlp4.jpg)
+  [![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltlp4.jpg)](https://media.geeksforgeeks.org/wp-content/uploads/ltlp4.jpg)
 
 We have calculated LPS length up-to position 7 where L[7] = 7, if we consider position 7 as centerPosition, then centerLeftPosition will be 0 and centerRightPosition will be 14.  
 Now we need to calculate LPS length of other positions on the right of centerPosition.
@@ -191,9 +206,7 @@ Here both i-left and i-right palindromes are completely contained in center pali
 Now if i-left palindrome is not a prefix of center palindrome (L[currentLeftPosition] < centerRightPosition – currentRightPosition), that means that i-left palindrome was not able to expand up-to position centerLeftPosition.
 
 If we look at following with centerPosition = 11, then
-
-                          (click to see it clearly)
-                    [![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltlp5.jpg)](https://media.geeksforgeeks.org/wp-content/uploads/ltlp5.jpg)
+![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltlp5.jpg)
 
 centerLeftPosition would be 11 – 9 = 2, and centerRightPosition would be 11 + 9 = 20  
 If we take currentRightPosition = 15, it’s currentLeftPosition is 7. Case 1 applies here and so L[15] = 3. i-left palindrome at position 7 is “bab” which is completely contained in center palindrome at position 11 (which is “dbabcbabd”). We can see that i-right palindrome (at position 15) can’t expand more than i-left palindrome (at position 7).
@@ -240,8 +253,7 @@ In this case, length of i-right palindrome is at least as long (centerRightPosit
 
 In following figure,
 
-                          (click to see it clearly)
-                    [![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltlp6.jpg)](https://media.geeksforgeeks.org/wp-content/uploads/ltlp6.jpg)
+[![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltlp6.jpg)](https://media.geeksforgeeks.org/wp-content/uploads/ltlp6.jpg)
 
 If we take center position 7, then Case 3 applies at currentRightPosition 11 because i-left palindrome at currentLeftPosition 3 is a prefix of center palindrome and i-right palindrome is not suffix of input string, so here L[11] = 9, which is greater than i-left palindrome length L[3] = 3. In the case, it is guaranteed that L[11] will be at least 3, and so in implementation, we 1st set L[11] = 3 and then we try to expand it by comparing characters in left and right side starting from distance 4 (As up-to distance 3, it is already known that characters will match).
 

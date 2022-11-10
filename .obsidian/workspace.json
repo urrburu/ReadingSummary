@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "ddfe4a18ec4b602f",
+        "id": "1dad1206a6d74ea7",
         "type": "tabs",
         "children": [
           {
-            "id": "15269ed25eab2bcf",
+            "id": "464f4fc28be3ff32",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "추석의 스프링 리액터/스프링 리액터 2 - 리액티브 프로그래밍.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "347edccfd685717b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spring/JDK Dynamic Proxy VS CGLIB.md",
+                "file": "Algorithm/Manacher algorithm.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/JDK Dynamic Proxy VS CGLIB.md",
+                "file": "Algorithm/Manacher algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/JDK Dynamic Proxy VS CGLIB.md",
+                "file": "Algorithm/Manacher algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/JDK Dynamic Proxy VS CGLIB.md"
+                "file": "Algorithm/Manacher algorithm.md"
               }
             }
           }
@@ -149,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "347edccfd685717b",
+  "active": "464f4fc28be3ff32",
   "lastOpenFiles": [
+    "Algorithm/Maximum Flow Algorithm.md",
+    "Algorithm/Manacher algorithm.md",
+    "Algorithm/KMP.md",
+    "면접실수 정리/한화시스템 면접.md",
     "추석의 스프링 리액터/스프링 리액터 2 - 리액티브 프로그래밍.md",
     "면접실수 정리/Toss 면접 잘 못했던 것들!.md",
     "면접실수 정리/SKT T웍스 면접 피드백.md",
-    "면접실수 정리/한화시스템 면접.md",
     "네트워크/gRPC -1 네이버 클라우드에서 베껴옴.md",
     "네트워크/gRPC-2.md",
-    "Java,JVM/Effective Java/생성자와 관련된 이야기.md",
-    "Java,JVM/Effective Java/자원을 직접 명시하지 말고 의존 객체 주입을 사용하라.md",
-    "Algorithm/Imos 테크닉 DP에 있어서.md",
-    "Algorithm/허프만 압축 알고리즘.md"
+    "Java,JVM/Effective Java/생성자와 관련된 이야기.md"
   ]
 }
