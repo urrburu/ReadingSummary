@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "430c1300ca2d010c",
+        "id": "6cfc603c0bd40458",
         "type": "tabs",
         "children": [
           {
-            "id": "e3c4bda750c69ea3",
+            "id": "44d2f63268af4bb0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "객체지향 생활체조 원칙.md",
+                "file": "메모리 안전성.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "60679f5ee916bc36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "테스트/Java에서 private 함수의 유닛테스트.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "객체지향 생활체조 원칙.md",
+                "file": "테스트/Java에서 private 함수의 유닛테스트.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "객체지향 생활체조 원칙.md",
+                "file": "테스트/Java에서 private 함수의 유닛테스트.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "객체지향 생활체조 원칙.md"
+                "file": "테스트/Java에서 private 함수의 유닛테스트.md"
               }
             }
           }
@@ -136,17 +149,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e3c4bda750c69ea3",
+  "active": "60679f5ee916bc36",
   "lastOpenFiles": [
+    "메모리 안전성.md",
+    "객체지향 생활체조 원칙.md",
+    "JPA/Select 1+N 문제.md",
+    "Select 1+N 문제.md",
     "세션, 쿠키, 세션 스토리지, 로컬 스토리지.md",
     "Nginx의 Reverse proxy.md",
     "웹서버와 WAS.md",
     "면접실수 정리/한화시스템 면접.md",
-    "객체지향 생활체조 원칙.md",
     "Java,JVM/Effective Java/생성자와 관련된 이야기.md",
-    "Java,JVM/Effective Java/자원을 직접 명시하지 말고 의존 객체 주입을 사용하라.md",
-    "Java,JVM/Effective Java/public 클래스에서는 public 필드가 아닌 접근자 매서드를 사용하라.md",
-    "Algorithm/Manacher algorithm.md",
-    "Algorithm/펜윅트리.md"
+    "Java,JVM/Effective Java/자원을 직접 명시하지 말고 의존 객체 주입을 사용하라.md"
   ]
 }
