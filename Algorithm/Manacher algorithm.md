@@ -37,13 +37,16 @@ To find Longest Palindromic Substring of a string of length N, one way is take e
 가장 긴 팰린드롬인 길이 N인 서브스트링을 찾기 위해, 가능한 각 2*N + 1 센터(N 문자 위치, 두 문자 위치와 왼쪽과 오른쪽 끝의 두 위치 사이의 N-1)를 취하고 각 2*N + 1 센터에서 왼쪽과 오른쪽 방향으로 문자를 일치시키고 가장 긴 팰린드롬 서브스트링을 찾는 한 가지 방법이 있다. 이 접근 방식에는 O(N^2) 시간이 소요되며, [Set 2](https://www.geeksforgeeks.org/longest-palindromic-substring-set-2/)에서 그렇게 하고 있습니다.
 
 Let’s consider two strings “abababa” and “abaaba” as shown below:  
-
+아래 그림을 보고 생각해보자.
 ![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltp3.jpg)  
 ![Manacher's Algorithm – Linear Time Longest Palindromic Substring](https://media.geeksforgeeks.org/wp-content/uploads/ltp4.jpg)
 
 In these two strings, left and right side of the center positions (position 7 in 1st string and position 6 in 2nd string) are symmetric. Why? Because the whole string is palindrome around the center position.   
-두 문자열 안에서, 가운데포지션에서 왼쪽과 오른쪽 방향은 비슷하다. 왜냐? 왜냐하면 전체 문자열이 팰린드롬이기 때문이다. 가운데포지션을 중심으로 한.
+두 문자열 안에서, 가운데포지션에서 왼쪽과 오른쪽 방향은 비슷하다. 
+왜냐하면 가운데 위치를 중심으로 해서 전체 문자열이 팰린드롬이기 때문이다.
 If we need to calculate Longest Palindromic Substring at each 2*N+1 positions from left to right, then palindrome’s symmetric property could help to avoid some of the unnecessary computations (i.e. character comparison).
+
+만약 우리가 가장 긴 팰린드롬 부분문자열을 계산하려면 각각 2N+1 위치들로부터 왼쪽에서 오른쪽으로 가장 긴 팰린드롬 문자열을 계산해야한다. 그 뒤 팰린드롬의 좌우대칭인 특징을 이용해 불필요한 연산을 줄일 수 있다.
 
 If there is a palindrome of some length L centered at any position P, then we may not need to compare all characters in left and right side at position P+1. We already calculated LPS at positions before P and they can help to avoid some of the comparisons after position P.   
 This use of information from previous positions at a later point of time makes the Manacher’s algorithm linear. In [Set 2](https://www.geeksforgeeks.org/longest-palindromic-substring-set-2/), there is no reuse of previous information and so that is quadratic. 

@@ -7,9 +7,11 @@ We’re finally running a Black Friday launch. All Courses are **30% off** unt
 ## 1. Overview[](https://www.baeldung.com/java-unit-test-private-methods#overview)
 
 In this tutorial, we'll briefly explain why testing private methods directly is generally not a good idea. Then we'll demonstrate how to test private methods in Java if it's necessary.
-
+이 튜토리얼에서 우리는 간단히 설명할 것이다. 
+"왜 프라이빗 함수를 직접 테스트하는 것이 일반적으로 안 좋은 생각일까?"
+그렇다면 우리는 어떻게 자바에서 필요할때 프라이빗 함수를 어떻게 테스트할 것인지 설명하려고 한다.
 ## 2. Why We Shouldn't Test Private Methods[](https://www.baeldung.com/java-unit-test-private-methods#why-we-shouldnt-test-private-methods)
-
+왜 우리는 프라이빗 함수를 테스트하면 안 되는가????
 **As a rule, the unit tests we write should only check our public methods contracts.** Private methods are implementation details that the callers of our public methods aren't aware of. Furthermore, changing our implementation details shouldn't lead us to change our tests.
 
 Generally speaking, urging to test a private method highlights one of the following problems:
