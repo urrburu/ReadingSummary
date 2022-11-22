@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "80b5ccc23d3ac9ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "범용 고유 식별자 - UUID.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flyway 도입할까?.md",
+                "file": "범용 고유 식별자 - UUID.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flyway 도입할까?.md",
+                "file": "범용 고유 식별자 - UUID.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flyway 도입할까?.md"
+                "file": "범용 고유 식별자 - UUID.md"
               }
             }
           }
@@ -149,8 +161,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "260d9569e77dccbb",
+  "active": "80b5ccc23d3ac9ba",
   "lastOpenFiles": [
+    "Flyway 도입할까?.md",
     "언어별 파일입출력 방법.md",
     "웹서버와 WAS.md",
     "앞으로의 계획......md",
@@ -159,7 +172,6 @@
     "Algorithm/Rolling Hashing - 라빈카프 알고리즘.md",
     "Algorithm/quick sort.md",
     "Algorithm/Merge Sort.md",
-    "Algorithm/Maximum Flow Algorithm.md",
-    "Algorithm/Manacher algorithm.md"
+    "Algorithm/Maximum Flow Algorithm.md"
   ]
 }
